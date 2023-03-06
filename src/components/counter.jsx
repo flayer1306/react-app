@@ -7,7 +7,7 @@ const formatCount = () => {
 const Counter = () => {
     return (
         <>
-        <h1>{formatCount()}</h1>
+        <span>{formatCount()}</span>
         </>
     );
 }

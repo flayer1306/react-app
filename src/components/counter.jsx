@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
+    const [ count, setCount ] = useState(0)
     const formatCount = () => {
         return count === 0 ? 'empty' : count;
     }
@@ -22,12 +22,12 @@ const Counter = () => {
 
     return (
         <>
-            <span className = {getBadgeClasses()}>{formatCount()}</span>
-            <button className = 'btn btn-primary btn-sm m-2'
+            <span className={getBadgeClasses()}>{formatCount()}</span>
+            <button className='btn btn-primary btn-sm m-2'
                     onClick={handleIncrement}>
                 +
             </button>
-            <button className = 'btn btn-primary btn-sm m-2'
+            <button className='btn btn-primary btn-sm m-2'
                     onClick={handleDecrement}>
                 -
             </button>

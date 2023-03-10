@@ -33,8 +33,7 @@ const Counter = () => {
                     {tag}
                 </li>
             )) : 'No tags';
-    }
-
+    };
 
     return (
         <>

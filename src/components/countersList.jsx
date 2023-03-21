@@ -26,16 +26,11 @@ const CountersList = () => {
             let newObj;
             if (count.id === id) {
                 newObj = {
-                    id: count.id,
+                    ...count,
                     value: count.value + 1,
-                    name: count.name
                 };
             } else {
-                newObj = {
-                    id: count.id,
-                    value: count.value,
-                    name: count.name
-                };
+                newObj = {...count};
             }
             return newObj;
         });
@@ -47,16 +42,11 @@ const CountersList = () => {
             let newObj;
             if (count.id === id) {
                 newObj = {
-                    id: count.id,
+                    ...count,
                     value: count.value - 1,
-                    name: count.name
                 };
             } else {
-                newObj = {
-                    id: count.id,
-                    value: count.value,
-                    name: count.name
-                };
+                newObj = {...count};
             }
             return newObj;
         });

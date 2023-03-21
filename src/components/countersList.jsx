@@ -25,8 +25,7 @@ const CountersList = () => {
         const incValue = counters.map((count) => {
             let newObj;
             if (count.id === id) {
-                newObj = {
-                    ...count,
+                newObj = { ...count,
                     value: count.value + 1,
                 };
             } else {

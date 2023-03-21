@@ -1,8 +1,15 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css'
+// import reportWebVitals from './reportWebVitals';
 import App from './app';
 
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <App/>
+);
 
-reactDom.render(<App/>, document.querySelector('#root'));
+// reportWebVitals();
+
+// reactDom.render(<App/>, document.querySelector('#root'));
